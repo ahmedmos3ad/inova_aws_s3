@@ -4,7 +4,7 @@ module InovaAwsS3
 
     def initialize
       # Set default values or raise an error if required values are not set
-      @acl = 'public-read'
+      @acl = "public-read"
       @bucket_name = nil
       @region = nil
       @access_key = nil

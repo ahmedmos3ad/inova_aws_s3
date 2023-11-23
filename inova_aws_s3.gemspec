@@ -13,9 +13,8 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/ahmedmos3ad/inova_aws_s3"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.2"
-  spec.add_dependency 'rails', '>= 6.1.7'
-  spec.add_dependency   'aws-sdk-s3', '~> 1'
-  spec.files         = Dir['lib/**/*', 'config/**/*', 'lib/generators/**/*']
+  spec.add_dependency "rails", ">= 6.1.7"
+  spec.add_dependency "aws-sdk-s3", "~> 1"
 
   # spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
