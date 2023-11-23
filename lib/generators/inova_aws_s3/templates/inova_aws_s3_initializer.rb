@@ -1,4 +1,4 @@
-YourGemName.configure do |config|
+InovaAwsS3.configure do |config|
   # Set your configuration options here
   config.acl = 'public-read'
   config.bucket_name = 'your_bucket_name'
