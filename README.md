@@ -5,13 +5,13 @@ InovaAwsS3 is a Ruby gem designed to simplify interactions with Amazon S3, provi
 To use this gem in your project, add it to your application's Gemfile:
 
 ```ruby
-gem 'inova_aws_s3', '~> 0.1.0'
+gem 'inova_aws_s3', '~> 0.2.0'
 ```
 
 Alternatively, you can install the gem directly using:
 
 ```bash
-gem install inova_aws_s3 -v '~> 0.1.0'
+gem install inova_aws_s3 -v '~> 0.2.0'
 ```
 ## Requirments
 
