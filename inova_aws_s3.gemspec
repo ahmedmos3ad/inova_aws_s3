@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Ruby Gem for uploading files to AWS S3."
   spec.description = "This gem is used to upload files to AWS S3."
-  spec.homepage = "https://inovaeg.com"
+  spec.homepage = "https://github.com/ahmedmos3ad/inova_aws_s3"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.2"
   spec.add_dependency 'rails', '>= 6.1.7'

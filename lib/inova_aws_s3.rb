@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "inova_aws_s3/version"
+require_relative "inova_aws_s3/configuration"
 
 module InovaAwsS3
   class Error < StandardError; end

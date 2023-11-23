@@ -26,4 +26,12 @@ class TestInovaAwsS3 < Minitest::Test
     # Assert the result based on your expectations
     assert_match URI::DEFAULT_PARSER.make_regexp, result
   end
+
+  def test_configuration
+    InovaAwsS3.configure do |config|
+      config.acl = 'public-read'
+    end
+
+    assert InovaAwsS3.configuration.acl == 'public-read'
+  end
 end
