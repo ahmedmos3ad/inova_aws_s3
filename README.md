@@ -15,9 +15,8 @@ gem 'inova_aws_s3', '~> 1'
 Alternatively, you can install the gem directly using:
 
 ```bash
-rails generate inova_aws_s3:install
+gem install inova_aws_s3 -v '~> 1'
 ```
-
 ## Requirments
 
 - Ruby >= 3.0.0
@@ -26,7 +25,7 @@ rails generate inova_aws_s3:install
 ## Usage
 
 ```bash
-gem install inova_aws_s3 -v '~> 1'
+rails generate inova_aws_s3:install
 ```
 
 This will create a configuration file at config/initializers/inova_aws_s3.rb. Open the file and set your AWS credentials:
@@ -46,7 +45,7 @@ Replace the placeholder values with your actual AWS credentials.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/inova_aws_s3. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/inova_aws_s3/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/ahmedmos3ad/inova_aws_s3/pulls. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ahmedmos3ad/inova_aws_s3/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -54,4 +53,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the InovaAwsS3 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/inova_aws_s3/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the InovaAwsS3 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ahmedmos3ad/inova_aws_s3/blob/master/CODE_OF_CONDUCT.md).
