@@ -1,0 +1,57 @@
+# InovaAwsS3
+
+TODO: Delete this and the text below, and describe your gem
+
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/inova_aws_s3`. To experiment with that code, run `bin/console` for an interactive prompt.
+
+## Installation
+
+To use this gem in your project, add it to your application's Gemfile:
+
+```ruby
+gem 'inova_aws_s3', '~> 1'
+```
+
+Alternatively, you can install the gem directly using:
+
+```bash
+rails generate inova_aws_s3:install
+```
+
+## Requirments
+
+- Ruby >= 3.0.0
+- Rails >= 6.1.3
+
+## Usage
+
+```bash
+gem install inova_aws_s3 -v '~> 1'
+```
+
+This will create a configuration file at config/initializers/inova_aws_s3.rb. Open the file and set your AWS credentials:
+
+```ruby
+InovaAwsS3.configure do |config|
+  config.acl = 'public-read'
+  config.bucket_name = 'your_bucket_name'
+  config.region = 'your_region'
+  config.access_key = 'your_access_key'
+  config.secret_key = 'your_secret_key'
+  config.folder_name = 'your_folder_name'
+end
+```
+
+Replace the placeholder values with your actual AWS credentials.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/inova_aws_s3. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/inova_aws_s3/blob/master/CODE_OF_CONDUCT.md).
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Code of Conduct
+
+Everyone interacting in the InovaAwsS3 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/inova_aws_s3/blob/master/CODE_OF_CONDUCT.md).
