@@ -23,12 +23,13 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-        bundler: latest  # Add this line
+        bundler: latest
     - name: Debug Info
       run: |
         ruby -v
         bundle -v
     - name: Install dependencies
-      run: bundle install
+      run: |
+        bundle install --no-deployment
     - name: Run the default task
       run: bundle exec rake
