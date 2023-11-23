@@ -1,21 +1,17 @@
 # InovaAwsS3
-
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/inova_aws_s3`. To experiment with that code, run `bin/console` for an interactive prompt.
-
+InovaAwsS3 is a Ruby gem designed to simplify interactions with Amazon S3, providing seamless integration for uploading, managing, and retrieving files from your S3 buckets. Whether you're building a web application, handling backups, or managing assets, InovaAwsS3 offers a clean and efficient interface to harness the power of Amazon S3 within your Ruby projects.
 ## Installation
 
 To use this gem in your project, add it to your application's Gemfile:
 
 ```ruby
-gem 'inova_aws_s3', '~> 1'
+gem 'inova_aws_s3', '~> 0.1.0'
 ```
 
 Alternatively, you can install the gem directly using:
 
 ```bash
-gem install inova_aws_s3 -v '~> 1'
+gem install inova_aws_s3 -v '~> 0.1.0'
 ```
 ## Requirments
 

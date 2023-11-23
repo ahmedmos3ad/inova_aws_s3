@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency   'aws-sdk-s3', '~> 1'
   spec.files         = Dir['lib/**/*', 'config/**/*', 'lib/generators/**/*']
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  # spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/ahmedmos3ad/inova_aws_s3"

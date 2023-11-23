@@ -7,3 +7,4 @@
 /spec/reports/
 /tmp/
 .env
+inova_aws_s3-0.1.0.gem
