@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.description = "This gem is used to upload files to AWS S3."
   spec.homepage = "https://inovaeg.com"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.0.0"
-  spec.add_dependency 'rails', '>= 6.0'
+  spec.required_ruby_version = ">= 3.1.2"
+  spec.add_dependency 'rails', '>= 6.1.7'
   spec.add_dependency   'aws-sdk-s3', '~> 1'
   spec.files         = Dir['lib/**/*', 'config/**/*', 'lib/generators/**/*']
 
