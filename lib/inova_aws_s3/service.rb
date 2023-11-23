@@ -31,7 +31,6 @@ module InovaAwsS3
       current_part = 1
       parts = []
       file = File.open(file, 'rb')
-      index = 1
       until file.eof?
         logger.info("#{key} Part #{current_part}")
         part = file.read(PART_SIZE)
@@ -46,14 +45,13 @@ module InovaAwsS3
         parts << { etag: resp_upload.etag, part_number: current_part }
         current_part = current_part + 1
       end
-      resp_complete = @s3_client.complete_multipart_upload({
-                                                             bucket: @bucket_name, # required
-                                                             key: key, # required
-                                                             multipart_upload: {
-                                                               parts: parts
-                                                             },
-                                                             upload_id: resp.upload_id # required
-                                                           })
+      @s3_client.complete_multipart_upload({bucket: @bucket_name, # required
+                                            key: key, # required
+                                            multipart_upload: {
+                                                                parts: parts
+                                                              },
+                                            upload_id: resp.upload_id # required
+                                          })
       file.close()
       set_object(key).public_url
     end

@@ -15,6 +15,13 @@ jobs:
       matrix:
         ruby:
           - '3.1.2'
+    env:
+      TEST_ACL: ${{ secrets.TEST_ACL }}
+      TEST_BUCKET: ${{ secrets.TEST_BUCKET }}
+      TEST_REGION: ${{ secrets.TEST_REGION }}
+      TEST_ACCESS_KEY: ${{ secrets.TEST_ACCESS_KEY }}
+      TEST_SECRET_KEY: ${{ secrets.TEST_SECRET_KEY }}
+      TEST_FOLDER: ${{ secrets.TEST_FOLDER }}
 
     steps:
     - uses: actions/checkout@v4
