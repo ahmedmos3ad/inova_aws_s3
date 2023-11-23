@@ -51,8 +51,7 @@ module InovaAwsS3
                                             multipart_upload: {
                                               parts: parts
                                             },
-                                            upload_id: resp.upload_id # required
-                                          })
+                                            upload_id: resp.upload_id})
       file.close
       set_object(key).public_url
     end
@@ -73,7 +72,7 @@ module InovaAwsS3
       return if url.nil?
       key = get_key_from_url(url)
       @s3_client.put_object_acl({acl: new_acl, bucket: @bucket_name, key: key})
-    rescue Exception
+    rescue
       puts "error in #{url}"
     end
 
@@ -81,7 +80,7 @@ module InovaAwsS3
       # uri = URI.parse(url)
       # File.basename(uri.path)
       arr = url.split("/")
-      arr[3..-1]&.join("/")
+      arr[3..]&.join("/")
     end
 
     def valid_s3_url?(url)
