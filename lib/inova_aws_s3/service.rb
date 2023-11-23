@@ -1,5 +1,5 @@
-module Aws
-  class S3Service
+module InovaAwsS3
+  class Service
     require 'aws-sdk-s3'
     PART_SIZE = 1024 * 1024 * 10
 

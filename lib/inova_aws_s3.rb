@@ -2,6 +2,7 @@
 
 require_relative "inova_aws_s3/version"
 require_relative "inova_aws_s3/configuration"
+require_relative "inova_aws_s3/service"
 
 module InovaAwsS3
   class Error < StandardError; end
